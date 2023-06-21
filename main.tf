@@ -83,6 +83,7 @@ module "db_instance" {
   license_model     = var.license_model
 
   db_name                             = var.db_name
+  manage_master_user_password         = var.manage_master_user_password
   username                            = var.username
   password                            = local.password
   port                                = var.port

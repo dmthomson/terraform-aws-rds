@@ -129,6 +129,12 @@ variable "db_name" {
   default     = null
 }
 
+variable "manage_master_user_password" {
+  description = "Allows RDS and Secrets Manager to manage master user password"
+  type        = bool
+  default     = false
+}
+
 variable "username" {
   description = "Username for the master DB user"
   type        = string
